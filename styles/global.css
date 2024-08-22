@@ -1,0 +1,23 @@
+:root{
+  --font-family: 'Poppins', sans-serif;
+  /* Iremos iniciar a estudar a unidade de medida de REM 
+     em significa a unidade de medida para as letras e o r por sua vez significa root
+  */
+  /* 1rem == 16px 
+    Se eu quiser 14px eu pego o 14 e divido por 16
+  */
+  --text: 400 1rem/1.5 var(--font-family) ;
+  --text-sm: 400 0.875rem/1.4 var(--font-family);
+
+  --text-primary:#292524;
+  --text-secondary:#57534E;
+  --text-tertiary:#8F8881;
+  --text-highlight:#E43A12;
+
+  --surface-primary:#FFFFFF;
+  --surface-secondary:#FEE7D6;
+
+  --stroke-default:#D6D3D1;
+  --stroke-hightlight:#F3541C;
+  --semantic-error:#DC2626;
+}
