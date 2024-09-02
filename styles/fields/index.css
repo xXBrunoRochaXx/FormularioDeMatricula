@@ -49,3 +49,21 @@ input[type="date"]{
 select{
   background: url(../../asstes/icons/arrow-down-01.svg) no-repeat calc(100% - 1rem);
 }
+
+.address .flex{
+  gap: 1.25rem;
+}
+
+.input-wrapper:has([disable]){/*O que tô fazendo aqui é que eu estou selecionando todos os campos disable para poder aplicar a opacidade*/
+  opacity: .5;
+}
+
+input{
+  &[disabled]{
+    background-color: var(--surface-disable);
+
+    border: 1px solid var(--stroke-default);
+
+    color: var(--text-primary);
+  }
+}
