@@ -1,0 +1,44 @@
+.terms-wrapper{
+  margin-top: 3rem;
+  display: flex;
+  gap: .75rem;
+  align-items: flex-start;
+
+
+  & strong{
+    font-weight: 500;
+    color: var(--laranja);
+    
+  }
+}
+
+
+.checkbox-wrapper{
+  position: relative;
+
+  & [type="checkbox"]{
+    all: unset;
+    position: absolute;
+    inset: 0; /*Esse inset 0 faz com que ele preencha todo o espaço*/
+  }
+
+  .checkbox-image{
+    flex: 0 0 1.5rem;
+    height: 1.5rem;
+
+    background-image: url(../../asstes/icons/checkbox.svg);
+  }
+
+&:hover, &:focus-within{
+  .checkbox-image{
+    background-image: url(../../asstes/icons/checkbox-hover.svg);
+  }
+}
+
+&:has(:checked){
+  .checkbox-image{
+    background-image: url(../../asstes/icons/checkbox-hiden.svg);
+  }
+}
+
+}
